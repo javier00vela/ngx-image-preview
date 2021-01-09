@@ -1,0 +1,16 @@
+<div 
+  [ngStyle]="sourceModel.styles" 
+  *ngIf="sourceModel.loading"
+>
+  <img 
+  [src]=sourceModel.loaderSource 
+  />
+</div>
+
+<img 
+  class="img-loaded"
+  *ngIf="!sourceModel.loading"
+  [src]="sourceModel.src" 
+  [ngStyle]="sourceModel.styles"
+  (error)="hideLoader()"
+/>

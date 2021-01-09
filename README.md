@@ -1,2 +1,2 @@
 # ngx-image-preview
-Image previewer library with multiple rendering settings
+Image preview library with multiple rendering settings

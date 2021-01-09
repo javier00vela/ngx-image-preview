@@ -4,20 +4,20 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project ngx-image-previewer` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-image-previewer`.
-> Note: Don't forget to add `--project ngx-image-previewer` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name --project ngx-image-preview` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-image-preview`.
+> Note: Don't forget to add `--project ngx-image-preview` or else it will be added to the default project in your `angular.json` file. 
 
 ## Build
 
-Run `ng build ngx-image-previewer` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build ngx-image-preview` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build ngx-image-previewer`, go to the dist folder `cd dist/ngx-image-previewer` and run `npm publish`.
+After building your library with `ng build ngx-image-preview`, go to the dist folder `cd dist/ngx-image-preview` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test ngx-image-previewer` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test ngx-image-preview` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 

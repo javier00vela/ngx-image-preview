@@ -20,9 +20,9 @@
       "dom"
     ],
     "paths": {
-      "ngx-image-previewer": [
-        "dist/ngx-image-previewer/ngx-image-previewer",
-        "dist/ngx-image-previewer"
+      "ngx-image-preview": [
+        "dist/ngx-image-preview/ngx-image-preview",
+        "dist/ngx-image-preview"
       ]
     }
   },

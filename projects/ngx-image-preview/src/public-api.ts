@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ngx-image-previewer
+ * Public API Surface of ngx-image-preview
  */
 
 export * from './lib/ngx-image-preview.service';

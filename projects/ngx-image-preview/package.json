@@ -1,6 +1,6 @@
 {
-  "name": "ngx-image-previewer",
-  "version": "0.0.1",
+  "name": "ngx-image-preview",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^11.0.6",
     "@angular/core": "^11.0.6"

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgxImagePreviewerService } from './ngx-image-preview.service';
+import { NgxImagePreviewService } from './ngx-image-preview.service';
 
-describe('NgxImagePreviewerService', () => {
-  let service: NgxImagePreviewerService;
+describe('NgxImagePreviewService', () => {
+  let service: NgxImagePreviewService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NgxImagePreviewerService);
+    service = TestBed.inject(NgxImagePreviewService);
   });
 
   it('should be created', () => {

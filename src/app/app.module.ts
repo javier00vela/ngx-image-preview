@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxImagePreviewerModule } from 'projects/ngx-image-preview/src/public-api';
+import { NgxImagePreviewModule } from 'projects/ngx-image-preview/src/public-api';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { NgxImagePreviewerModule } from 'projects/ngx-image-preview/src/public-a
   ],
   imports: [
     BrowserModule,
-    NgxImagePreviewerModule
+    NgxImagePreviewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
