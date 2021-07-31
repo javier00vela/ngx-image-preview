@@ -1,16 +1,20 @@
-<div 
-  [ngStyle]="sourceModel.styles" 
-  *ngIf="sourceModel.loading"
->
+<div class="image-container">
+
+  <div 
+    *ngIf="sourceModel.loading"
+    crossOrigin="Anonymous"
+  >
+    <img 
+      [src]=sourceModel.loaderSource 
+    />
+  </div>
+
   <img 
-  [src]=sourceModel.loaderSource 
+    class="img-loaded"
+    crossOrigin="Anonymous"
+    *ngIf="!sourceModel.loading"
+    [src]="sourceModel.src" 
+    [ngStyle]="sourceModel.styles"
+    (error)="hideLoader()"
   />
 </div>
-
-<img 
-  class="img-loaded"
-  *ngIf="!sourceModel.loading"
-  [src]="sourceModel.src" 
-  [ngStyle]="sourceModel.styles"
-  (error)="hideLoader()"
-/>

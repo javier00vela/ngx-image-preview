@@ -4,45 +4,27 @@ import { Source } from 'projects/ngx-image-preview/src/lib/interfaces/source.int
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: []
 })
 export class AppComponent {
-  title = 'ngx-image-preview';
-  public source : Source[] = [
-    {
-    src : "https://fondosmil.com/fondo/17009.jpg",
-    styles : { width:"50px",height:"50px" , 'border-radius':"5%",transition: 'width 2s'},
-    loading : true,
-    loaderSource : "https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
-  },
-  {
-    src : "https://fondosmil.com/fondo/16009.jpg",
-    styles : { width:"100px",height:"100px" , 'border-radius':"5%",transition: 'width 2s'},
-    loading : true,
-    loaderSource : "https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
-  },
-  {
-    src : "https://fondosmil.com/fondo/16109.jpg",
-    styles : { width:"200px",height:"200px" , 'border-radius':"5%",transition: 'width 2s'},
-    loading : true,
-    loaderSource : "https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
-  },
-  {
-    src : "https://fondosmil.com/fondo/15009.jpg",
-    styles : { width:"400px",height:"400px" , 'border-radius':"5%",transition: 'width 2s'},
-    loading : true,
-    loaderSource : "https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
-  },
-  {
-    src : "https://fondosmil.com/fondo/109.jpg",
-    styles : { width:"800px",height:"800px" , 'border-radius':"5%",transition: 'width 2s'},
-    loading : true,
-    loaderSource : "https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
-  },
-];
+  public title = 'ngx-image-preview';
+  public catApi = 'https://placekitten.com/';
+  public source : Source[] = [];
 
   ngOnInit(): void {
-   
+    let path : Source  = <Source>{};
+    const randomNumber = (min : number , max  : number ) => Math.floor(Math.random() * (max - min ) + min) 
+    for (let i = 0; i < 220; i++) {
+      let widthRandom = randomNumber(350,720);
+      let heightRandom = randomNumber(200,820);
+      path = { 
+        src : `${this.catApi}${widthRandom}/${heightRandom}`,
+        styles : { width:`${widthRandom}px`,height:`${heightRandom}px` , 'border-radius':"1%" , "filter": "grayscale(10%)"},
+        loading : true,
+        loaderSource : "https://thememyxbox.net/images/loading.gif" 
+      }
+      this.source = [...this.source , path ]
+    }
   }
 
 }
